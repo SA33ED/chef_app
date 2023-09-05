@@ -18,6 +18,7 @@ class SplashView extends StatelessWidget {
               Assets.imagesApplogo,
               width: 140,
             ),
+            const SizedBox(height: 16),
             Text(
               "Chef App",
               style: CustomTextStyles.latoStyle36,
