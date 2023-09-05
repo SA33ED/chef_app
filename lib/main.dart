@@ -1,4 +1,5 @@
 import 'package:chef_app/core/theme/app_theme.dart';
+import 'package:chef_app/core/utils/app_router.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,7 +11,8 @@ class ChefApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
+      routerConfig: AppRouter.router,
       theme: getAppTheme(),
     );
   }
