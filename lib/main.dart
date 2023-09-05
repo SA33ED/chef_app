@@ -1,3 +1,4 @@
+import 'package:chef_app/core/theme/app_theme.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -9,6 +10,8 @@ class ChefApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp();
+    return MaterialApp(
+      theme: getAppTheme(),
+    );
   }
 }
